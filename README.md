@@ -14,33 +14,84 @@ Endpoints: se pueden utilizar los que se consideren necesarios
 Autorización y requests  
 Función para convertir Json a Dataframe  
 Limpieza de datos  
-Preguntas
- * Dólar oficial vs Dólar Blue:   
-    * Últimos 365 días:
-        * 1) Día con mayor variación en la brecha  
-        | Date                |   Valor_var_usd_vs_usd_of |
-|:--------------------|--------------------------:|
-| 2022-07-22 00:00:00 |                   160.481 |
-        ![src\img01.png](https://github.com/Jhlirion/DolarBlue_vs_DolarOficial/blob/main/src/grafico01.png)
-        * 2) Top 5 días con mayor volatilidad  
-        ![src\img01.png](https://github.com/Jhlirion/DolarBlue_vs_DolarOficial/blob/main/src/grafico01.png)
-        * 3) Semana con mayor variación en la brecha 
+___________
+* Últimos 365 días:
+* 1) Día con mayor variación en la brecha, respecto al día anterior:
 
-        * 4) Día de la semana donde hay mayor variación en la brecha   
+    | Fecha               |   Variación |
+    |:--------------------|--------------------------:|
+    | 2022-07-22 00:00:00 |                   160.48 |.
 
+    ![variación](https://github.com/Jhlirion/DolarBlue_vs_DolarOficial/blob/main/src/grafico01.png)
 
-    * General:
-        * 5) Con la info histórica del valor del dólar y del blue, realizar un análisis exploratorio. Cruzar la data con sucesos importantes a nivel político-económico y graficar mes a mes.
-        
-        * 6) Implementar una regresión lineal (una para cada tipo de dólar) para predecir el valor del dólar en:
-            * 3 meses
-            * 6 meses
-            * 12 meses
-        * 7) Bonus opcional: Realizar una calculadora de predicción de aumento del dólar
+* 2) Top 5 días con mayor volatilidad:
+
+    |Fecha      |    Volatilidad|
+    |:----------|----------:|
+    |2021-11-12 |   0.053035|
+    |2022-02-04 |   0.059963|
+    |2022-05-23 |   0.062813|
+    |2022-07-29 |   0.171625|
+
+    ![Volatilidad](https://github.com/Jhlirion/DolarBlue_vs_DolarOficial/blob/main/src/grafico02.png)
 
 
-* Inflación vs Dólar
-    * Últimos 4 años:
-        * 8) Mejor momento para comprar dolár oficial y venderlo a dolár blu
+* 3) Semana con mayor variación en la brecha 
+
+    |   Semana |    mean |
+    |:---------:|--------:|
+    |       29 | 144.868 |
+
+    ![varia_brecha](https://github.com/Jhlirion/DolarBlue_vs_DolarOficial/blob/main/src/grafico03.png)
 
 
+* 4) Día de la semana donde hay mayor variación en la brecha   
+
+    | Fecha               | Day    |   Diferencia |
+    |:--------------------|:-------|-------------:|
+    | 2022-07-04 00:00:00 | Monday |    8.0% |
+
+    ![dia_brecha](https://github.com/Jhlirion/DolarBlue_vs_DolarOficial/blob/main/src/grafico04.png)
+
+## General:
+
+* 5) Con la info histórica del valor del dólar y del blue, realizar un análisis exploratorio. Cruzar la data con sucesos importantes a nivel político-económico y graficar mes a mes.
+
+    | AnioMes   |   Valor_var_usd_vs_usd_of | Evento              | Tipo_Evento   |
+    |:----------|--------------------------:|:--------------------|:--------------|
+    | 2022-08   |                  119.58  | Sergio Massa        | econ          |
+    | 2022-07   |                  112.71  | Silvina Batakis     | econ          |
+    | 2022-07   |                  112.71  | Sergio Massa        | econ          |
+    | 2014-10   |                   78.80 | Alejandro Vanoli    | bcra          |
+    | 2013-11   |                   63.78 | Juan Carlos Fábrega | bcra          |
+    | 2013-11   |                   63.78 | Axel Kicillof       | econ          |
+    | 2012-08   |                   37.06 | Cepo al Dolar       | misc          |
+
+    ![eventos](https://github.com/Jhlirion/DolarBlue_vs_DolarOficial/blob/main/src/grafico05.png)
+
+
+* 6) Implementar una regresión lineal (una para cada tipo de dólar) para predecir el valor del dólar en:
+
+
+* 8) Mejor momento para comprar dolár oficial y venderlo a dolár blu
+ 
+    | Mejor dia para Comprar fue:    | Date                |   Variacion_usd_of |
+    |---:|:--------------------|-------------------:|
+    |  | 2021-11-24 00:00:00 |        0.000198807 |
+    |  | 2021-09-28 00:00:00 |        0.000101348 |
+    |   | 2021-10-05 00:00:00 |        0.000101122 |
+    |  | 2021-11-30 00:00:00 |        9.90884e-05 |
+    |  | 2021-11-05 00:00:00 |        0           |
+    |   | 2021-09-27 00:00:00 |        0           |
+
+    |Mejor dia para Vender fue:       | Date                |   Variacion_usd |
+    |----:|:--------------------|----------------:|
+    |  | 2022-06-14 00:00:00 |       0.037037  |
+    |  | 2022-07-04 00:00:00 |       0.0878661 |
+    |  | 2022-07-08 00:00:00 |       0.0622568 |
+    |  | 2022-07-13 00:00:00 |       0.0404412 |
+    |  | 2022-07-20 00:00:00 |       0.0531561 |
+    |  | 2022-07-21 00:00:00 |       0.0630915 |
+
+
+    ![moment](https://github.com/Jhlirion/DolarBlue_vs_DolarOficial/blob/main/src/grafico07.png)
