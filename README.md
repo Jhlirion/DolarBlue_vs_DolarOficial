@@ -20,7 +20,7 @@ ___________
 
     | Fecha               |   Variación |
     |:--------------------|--------------------------:|
-    | 2022-07-22 00:00:00 |                   160.48 |.
+    | 2022-07-22  |                   160.48 |.
 
     ![variación](https://github.com/Jhlirion/DolarBlue_vs_DolarOficial/blob/main/src/grafico01.png)
 
@@ -49,7 +49,7 @@ ___________
 
     | Fecha               | Day    |   Diferencia |
     |:--------------------|:-------|-------------:|
-    | 2022-07-04 00:00:00 | Monday |    8.0% |
+    | 2022-07-04  | Monday |    8.0% |
 
     ![dia_brecha](https://github.com/Jhlirion/DolarBlue_vs_DolarOficial/blob/main/src/grafico04.png)
 
@@ -72,26 +72,31 @@ ___________
 
 * 6) Implementar una regresión lineal (una para cada tipo de dólar) para predecir el valor del dólar en:
 
+    |Precio dolar                                              |     |
+    |:---------------------------------------------------------|-----:|
+    |para la fecha: 2022-12-26  el valor del dolar Blue es de: | 5.04|
+    |para la fecha: 2023-03-26  el valor del dolar Blue es de: | 5.14 |
+    |para la fecha: 2023-09-27  el valor del dolar Blue es de: | 5.34 |
+
 
 * 8) Mejor momento para comprar dolár oficial y venderlo a dolár blu
  
-    | Mejor dia para Comprar fue:    | Date                |   Variacion_usd_of |
+    | Mejor dia para Comprar fue:    | Date      |   Variacion_usd_of |
     |---:|:--------------------|-------------------:|
-    |  | 2021-11-24 00:00:00 |        0.000198807 |
-    |  | 2021-09-28 00:00:00 |        0.000101348 |
-    |   | 2021-10-05 00:00:00 |        0.000101122 |
-    |  | 2021-11-30 00:00:00 |        9.90884e-05 |
-    |  | 2021-11-05 00:00:00 |        0           |
-    |   | 2021-09-27 00:00:00 |        0           |
+    |  | 2021-11-24  |        0.000198807 |
+    |  | 2021-09-28  |        0.000101348 |
+    |  | 2021-10-05  |        0.000101122 |
+    |  | 2021-11-30  |        9.90884e-05 |
+    
 
-    |Mejor dia para Vender fue:       | Date                |   Variacion_usd |
+    |Mejor dia para Vender fue:       | Date    |   Variacion_usd |
     |----:|:--------------------|----------------:|
-    |  | 2022-06-14 00:00:00 |       0.037037  |
-    |  | 2022-07-04 00:00:00 |       0.0878661 |
-    |  | 2022-07-08 00:00:00 |       0.0622568 |
-    |  | 2022-07-13 00:00:00 |       0.0404412 |
-    |  | 2022-07-20 00:00:00 |       0.0531561 |
-    |  | 2022-07-21 00:00:00 |       0.0630915 |
+    |  | 2022-06-14  |       0.037037  |
+    |  | 2022-07-04  |       0.0878661 |
+    |  | 2022-07-08  |       0.0622568 |
+    |  | 2022-07-13  |       0.0404412 |
+    |  | 2022-07-20  |       0.0531561 |
+    |  | 2022-07-21  |       0.0630915 |
 
 
     ![moment](https://github.com/Jhlirion/DolarBlue_vs_DolarOficial/blob/main/src/grafico07.png)
